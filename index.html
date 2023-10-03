@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="text-align: center;">
+<body style="text-align: center; margin: 20% 0%; overflow-y: hidden;">
 
     <button type = "button" onclick="roll(1, 6)" style = "background-color: #f44336; border: none; color: white;  padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;">Roll Dice</button>
-    <p class="output" id="output"></p>
+    <p class="output" id="output" style="font-size:larger; font-family:Georgia, 'Times New Roman', Times, serif;"></p>
 
     <script>
         const out1 = document.getElementById('output');
@@ -22,7 +22,6 @@
             out1.innerHTML = `Dice 1: ${dice1}, Dice 2: ${dice2}, Total: ${sum}`;
         }
     </script>
-
 
 </body>
 </html>
